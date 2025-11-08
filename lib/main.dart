@@ -1,5 +1,6 @@
 import 'package:expense_app/expenses.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: Color.fromARGB(255, 92, 54, 181),
@@ -11,7 +12,12 @@ var kDarkColorSheme = ColorScheme.fromSeed(
 );
 
 void main() {
-  runApp(const MyApp());
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((
+  //   fn,
+  // ) {
+    runApp(const MyApp());
+  // });
 }
 
 class MyApp extends StatelessWidget {
@@ -31,7 +37,7 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: kDarkColorSheme.primaryContainer,
-            foregroundColor:  kDarkColorSheme.onPrimaryContainer
+            foregroundColor: kDarkColorSheme.onPrimaryContainer,
           ),
         ),
       ),
