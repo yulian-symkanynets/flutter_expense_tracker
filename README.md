@@ -4,8 +4,10 @@ A simple Flutter application for tracking daily expenses with a clean UI, charts
 
 ## Screenshots
 
-![Home](screenshots/home.png)  
-![Add Expense](screenshots/add_expense.png)
+<p float="left">
+  <img src="screenshots/home.png" width="45%" />
+  <img src="screenshots/add_expense.png" width="45%" />
+</p>
 
 ## Features
 
