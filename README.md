@@ -1,16 +1,44 @@
-# expense_app
+# Expense Tracker
 
-A new Flutter project.
+A simple Flutter application for tracking daily expenses with a clean UI, charts, and basic state management.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![Home](screenshots/home.png)  
+![Add Expense](screenshots/add_expense.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Add and delete expenses
+- Undo deletion
+- Category-based chart
+- Responsive layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure
+
+```
+lib/
+  main.dart
+  expenses.dart
+  new_expense.dart
+  models/
+    expense.dart
+  widgets/
+    chart.dart
+    chart_bar.dart
+    expenses_list.dart
+    expense_item.dart
+```
+
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Requirements
+
+- Flutter 3.0 or later
+
+---
